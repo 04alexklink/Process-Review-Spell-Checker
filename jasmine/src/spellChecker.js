@@ -1,0 +1,3 @@
+function spellChecker() {
+  return "weather";
+}
