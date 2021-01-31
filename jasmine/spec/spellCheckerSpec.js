@@ -16,4 +16,17 @@ describe("spellChecker", () => {
     string = "the weather";
     expect(spellChecker(string)).toEqual("the weather");
   })
+  it("takes string input with some words not in the wordbank and returns expected output", () => {
+    string = "The weeather";
+    expect(spellChecker(string)).toEqual("The ~weeather~");
+  })
+  it("takes string input with some words not in the wordbank and returns expected output", () => {
+    string1 = "The weather over the next few days is looking pretty chilly so make sure to wrap up warm"
+    expect(spellChecker(string1)).toEqual(string1);
+  })
+  it("takes string input with some words not in the wordbank and returns expected output", () => {
+    string1 = "The weeather over thee next few days is looking prettyy chilly so make sure to wrap up warm"
+    string2 = "The ~weeather~ over ~thee~ next few days is looking ~prettyy~ chilly so make sure to wrap up warm"
+    expect(spellChecker(string1)).toEqual(string2);
+  })
 })

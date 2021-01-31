@@ -17,3 +17,4 @@ INPUT                          | OUTPUT
 "weeather"                     |   "~weeather~"
 "Weather                       |   "Weather"
 "The weather"                  |   "The weather"
+"The weeather"                 |   "The ~weeather~"
