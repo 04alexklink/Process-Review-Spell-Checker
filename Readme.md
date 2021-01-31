@@ -18,3 +18,10 @@ INPUT                          | OUTPUT
 "Weather                       |   "Weather"
 "The weather"                  |   "The weather"
 "The weeather"                 |   "The ~weeather~"
+string1 = "The weeather over thee next few days is looking prettyy chilly so make sure to wrap up warm"
+string2 = "The ~weeather~ over ~thee~ next few days is looking ~prettyy~ chilly so make sure to wrap up warm"
+string1                        |   string2
+
+Edge Cases:
+- String is empty. Throw error. 
+- The argument inputted is not a string. Throw error. 

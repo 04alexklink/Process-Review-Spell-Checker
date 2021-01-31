@@ -29,4 +29,10 @@ describe("spellChecker", () => {
     string2 = "The ~weeather~ over ~thee~ next few days is looking ~prettyy~ chilly so make sure to wrap up warm"
     expect(spellChecker(string1)).toEqual(string2);
   })
+  describe("edge cases", () => {
+    it("throws error if anything other than a string is inputted", () => {
+      array = []
+      expect(function() {spellChecker(array)}).toThrowError("A String was not inputted.")
+    })
+  })
 })
