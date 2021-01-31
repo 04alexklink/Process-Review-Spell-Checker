@@ -12,8 +12,8 @@ describe("spellChecker", () => {
     string = "Weather";
     expect(spellChecker(string)).toEqual("Weather");
   })
-//   it("takes in a string with  multiple words and returns it when all spelt correctly", () => {
-//     string = "The weather";
-//     expect(spellChecker(string)).toEqual("The weather");
-//   })
+  it("takes in a string with  multiple words and returns it when all spelt correctly", () => {
+    string = "the weather";
+    expect(spellChecker(string)).toEqual("the weather");
+  })
 })
