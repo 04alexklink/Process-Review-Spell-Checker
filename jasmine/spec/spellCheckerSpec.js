@@ -31,7 +31,7 @@ describe("spellChecker", () => {
   })
   describe("edge cases", () => {
     it("throws error if anything other than a string is inputted", () => {
-      array = []
+      var array = [];
       expect(function() {spellChecker(array)}).toThrowError("A String was not inputted.")
     })
   })

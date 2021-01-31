@@ -1,6 +1,6 @@
 function spellChecker(string) {
-  if (typeof(string) !== "string") throw new Error("A String was not inputted.")
-  var wordBank = { 
+   _isString(string)
+   var wordBank = { 
     words: ["the", "weather", "over", "the", "next", "few", "days", "is", "looking", 
     "pretty", "chilly", "so", "make", "sure", "to", "wrap", "up", "warm"] 
   }
@@ -10,4 +10,8 @@ function spellChecker(string) {
     return `~${word}~`;
   })
   return outputArrayOfWords.join(" ");
+}
+
+function _isString(string) {
+  if (typeof(string) !== "string") throw new Error("A String was not inputted.")
 }
