@@ -1,3 +1,3 @@
-function spellChecker() {
-  return "weather";
+function spellChecker(string) {
+  return string;
 }

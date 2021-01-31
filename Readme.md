@@ -14,3 +14,4 @@ wordbank = { words: ["The", "weather", "over", "the", "next", "few", "days", "is
 
 INPUT                          | OUTPUT
 "weather"                      |   "weather"
+"Weather"                      |   "Weather"
