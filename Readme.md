@@ -6,6 +6,8 @@ I work for a company called MegaSoftWired and we make a word processor. One of t
 So a string should be inputted, and any misspelt words should have ~ signs on either side of said word, but other than that the string should be returned as it was. 
 As it's just a prototype, the wordbank you can use for now can be about 10 words. 
 
+Note: Capitalisation does not make the word misspelt so word can be compared to wordbank as lowercase or uppercase. 
+
 So example sentence I will use: 
 - "The weather over the next few days is looking pretty chilly so make sure to wrap up warm"
 - wordbank = { words: ["The", "weather", "over", "the", "next", "few", "days", "is", "looking" 
